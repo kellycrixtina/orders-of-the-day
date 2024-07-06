@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #111927;
+    font-weight: 800;
+    text-shadow: rgb(155, 152, 152) 1px 1px;
+}
+
+header p {
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #111927;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+main {
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 0.5rem 0;
+    margin-top: 1.5rem;
+}
+
+#firstStep {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #463067;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    gap: 3rem;
+    margin: 1rem auto;
+    box-shadow: 0.5px 1px 2px #463067c9;
+}
+
+#firstStep label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.box button {
+    background-color: #463067c9;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.001rem 0.2rem;
+    color: antiquewhite;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0.5px 1px 2px #463067c9;
+}
+
+.box input {
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin-left: 1rem;
+    width: 2rem;
+    text-align: center;
+    line-height: normal;
+}
+
+.one-button {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button,
+.back-button,
+.send-button {
+    background-color: #111927;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.add-button {
+    padding: 1rem 8rem;
+}
+
+.back-button {
+    padding: 1rem 2.5rem;
+}
+
+.send-button {
+    padding: 1rem 1rem;
+}
+
+.infoPage {
+    border: 1px solid #463067;
+    box-shadow: 0.5px 1px 2px #463067c9;
+    border-radius: 0.5rem;
+    padding: 1.3rem 1.2rem 0;
+    margin: 0.5rem auto;
+    border-radius: 8px;
+}
+
+h4 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+hr {
+    margin-bottom: 1.1rem;
+    border: 1px solid #555;
+}
+
+.cake {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoPage label {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 0.5rem;
+}
+
+.infoPage input {
+    border: 1px solid #463067;
+    border-radius: 4px;
+    padding: 0.3rem 0 0.4rem 0.3rem;
+    width: 8rem;
+}
+
+.infoPage input::placeholder {
+    font-size: 0.7rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+    padding: 0.4rem 0 1rem 0.3rem;
+}
+
+
+.two-buttons {
+    display: flex;
+    justify-content: space-between;
+}

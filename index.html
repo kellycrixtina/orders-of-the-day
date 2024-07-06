@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>split lunar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Pedidos do dia</h1>
+            <p>Até às 11h - Máximo 1 pedido por pessoa</p>
+        </header>
+        <!-- Formulário para o pedido -->
+        <form id="orderForm">
+            <div id="firstStep">
+                <label>TOPO SIMPLES</label>
+                <div class="box">
+                    <button type="button" onclick="subtract('cakeTopper')">−</button>
+                    <input type="number" id="cakeTopper" name="cakeTopper" value="0" min="0" max="1" readonly>
+                    <button type="button" onclick="add('cakeTopper')">+</button>
+                </div>
+            </div>
+            <!-- Botão para avançar para a próxima etapa -->
+            <div class="one-button">
+                <button type="button" class="add-button" onclick="nextStep()">Avançar</button>
+            </div>
+        </form>
+        <!-- Segunda parte do formulário -->
+        <div id="secondStep" style="display: none;">
+            <form id="details">
+                <div id="cakeTopperDetails"></div>
+                <!-- Botão para voltar à etapa anterior -->
+                <div class="two-buttons">
+                    <button type="button" class="back-button" onclick="goBack()">Voltar</button>
+                    <button type="button" class="send-button" onclick="sendMessage()">Enviar pedido</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
